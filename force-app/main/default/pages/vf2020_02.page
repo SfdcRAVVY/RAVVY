@@ -1,0 +1,41 @@
+<apex:page controller="StudentInfo">
+    <apex:form >
+        <apex:PageBlock title="Student Info">
+            <apex:PageBlockSection title="STudent personal Info">
+                <apex:PageBlockSectionitem >
+                    <apex:outputLabel value="firstname"/><apex:inputtext value="{!fname}"/>
+                </apex:PageBlockSectionitem>
+                <apex:PageBlockSectionitem >
+                    <apex:outputLabel value="Lastname"/><apex:inputtext value="{!lname}"/>
+                </apex:PageBlockSectionitem>
+            </apex:PageBlockSection>
+            
+            <apex:PageBlockSection title="STudent Address Info">
+                <apex:PageBlockSectionitem >
+                    <apex:outputLabel value="H.No"/><apex:inputtext value="{!Hnum}"/>
+                </apex:PageBlockSectionitem>
+                <apex:PageBlockSectionitem >
+                    <apex:outputLabel value="Street"/><apex:inputtext value="{!street}"/>
+                </apex:PageBlockSectionitem>
+                <apex:PageBlockSectionitem >
+                    <apex:outputLabel value="State"/><apex:inputtext value="{!state}"/>
+                </apex:PageBlockSectionitem>
+                <apex:PageBlockSectionitem >
+                    <apex:outputLabel value="Pincode"/><apex:inputtext value="{!pincode}"/>
+                </apex:PageBlockSectionitem>
+            </apex:PageBlockSection>
+            
+            <apex:PageBlockSection Title="Other Info">
+                <apex:PageBlockSectionitem >
+                    <apex:outputLabel value="Aadhaar"/><apex:inputtext value="{!Adhaar}"/>
+                </apex:PageBlockSectionitem>
+            </apex:PageBlockSection>
+            
+            <apex:pageblockbuttons >
+                <apex:commandbutton value="Save"/>
+                <apex:commandbutton value="Cancel"/>
+                <apex:commandbutton value="Edit"/>
+            </apex:pageblockbuttons>
+        </apex:PageBlock>
+    </apex:form>
+</apex:page>
